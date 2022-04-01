@@ -56,7 +56,6 @@ def polyomino_split(figure, n):
     Split given `figure` to polyominos of size `n`.
     """
     pols = pm.generate(n)
-
     return _solution_generator(figure, pols)
 
 
@@ -67,7 +66,6 @@ def auto_congruent_polyomino_split(figure, n):
     ans = []
     for pol in pm.free(pm.generate(n)):
         ans.append(_solution_generator(figure, set(pol.transforms())))
-    # print(zip(*ans)
     return itertools.chain(*ans)
 
 

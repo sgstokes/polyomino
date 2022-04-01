@@ -3,6 +3,8 @@ import poly.solver as solver
 
 figure = parser.load_file("shapes/figure_4x4.pol")
 
+print(figure, "\n")
+
 for idx, s in enumerate(solver.auto_congruent_polyomino_split(figure, 4)):
     parser.save_solution_to_svg(s, "output/" + str(idx) + "th_sol.svg")
     parser.pretty_print_solution(s)

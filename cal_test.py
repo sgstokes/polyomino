@@ -10,8 +10,9 @@ pols = set()
 print(figure, "\n")
 
 for p in parts:
-    pol = parser.load_file(f"shapes/{p}.pol")
-    pols.add(pol)
+    pol = parser.load_file(f"shapes/{p}.pol").transforms()
+    pols.update(pol)
+    print(pol, "\n")
 
 for idx, s in enumerate(solver.polomino_solve(figure, pols)):
     parser.save_solution_to_svg(s, "output/" + str(idx) + "th_sol.svg")
