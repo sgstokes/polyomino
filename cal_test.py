@@ -3,7 +3,7 @@ import poly.solver as solver
 
 import poly.polyomino as pm
 
-figure = parser.load("shapes/cal_figure.pol")
+figure = parser.load("shapes/cal_figure_0101.pol")
 parts = ["L4", "L5", "O4", "P5", "T4", "U5", "X5", "Z4", "Z5"]
 pols = set()
 
