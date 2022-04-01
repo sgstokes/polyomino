@@ -69,7 +69,7 @@ def auto_congruent_polyomino_split(figure, n):
     return itertools.chain(*ans)
 
 
-def polomino_solve(figure, pols):
+def polyomino_solve(figure, pols):
     """
     Split given `figure` to polyominos specified.
     """
