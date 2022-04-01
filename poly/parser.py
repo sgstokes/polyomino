@@ -54,7 +54,29 @@ def _solution_to_data(solution):
     return data
 
 
-def load(filepath):
+def load_file(filepath):
+    """
+    Load polyomino from .pol file
+
+    Example T-polyomino:
+    XXX
+     X
+     X
+
+    """
+    f = open(filepath)
+    data = f.read().split("\n")
+
+    pol = []
+
+    for i in range(len(data)):
+        for j in range(len(data[i])):
+            if data[i][j] == "X":
+                pol.append((i, j))
+
+    return Polyomino(pol).normalize()
+
+def load_list(filepath):
     """
     Load polyomino from .pol file
 
