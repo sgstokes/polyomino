@@ -1,5 +1,5 @@
-import polyomino.parser as parser
-import polyomino.solver as solver
+import poly.parser as parser
+import poly.solver as solver
 
 figure = parser.load("shapes/figure.pol")
 part = parser.load("shapes/_part.pol")

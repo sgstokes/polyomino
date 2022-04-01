@@ -1,7 +1,7 @@
-import polyomino.parser as parser
-import polyomino.solver as solver
+import poly.parser as parser
+import poly.solver as solver
 
-import polyomino.polyomino as pm
+import poly.polyomino as pm
 
 figure = parser.load("shapes/cal_figure.pol")
 parts = ["L4", "L5", "O4", "P5", "T4", "U5", "X5", "Z4", "Z5"]
